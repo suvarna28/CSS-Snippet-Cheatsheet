@@ -137,6 +137,7 @@ h2 {
     background-image: linear-gradient(var(--darker), var(--lighter));
     /*Gives a bit of cushion between the margins of the gradient and the pre-formatted texts of code.*/
     padding: 20px;
+    /*space between bottom of gradient boxes and the dashed borders*/
     margin-bottom: 10px;
     /* When clicking on text, selects all text */
     user-select: all;
@@ -146,7 +147,6 @@ h2 {
 }
 
 .code-block {
-    vertical-align: baseline;
     /*font size for code*/
     font-size: 18px;
 }
