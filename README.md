@@ -13,8 +13,7 @@ This project was a collaborative effort to display a collection of Cascading Sty
 
 ## Credits
 
-[Andre Brahin] (https://github.com/VenBak)
-[MaSandra Ewing](https://github.com/mewing0328), [Suvarna Jadhav](https://github.com/suvarna28), and [Claire Lee](https://github.com/leeclaire156) contributed to this repository.
+[Andre Brahin](https://github.com/VenBak), [MaSandra Ewing](https://github.com/mewing0328), [Suvarna Jadhav](https://github.com/suvarna28), and [Claire Lee](https://github.com/leeclaire156) contributed to this repository.
 
 HTML code belongs to George Washington University's Full Stack Coding BootCamp.
 
