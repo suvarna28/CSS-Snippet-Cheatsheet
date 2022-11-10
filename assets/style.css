@@ -1,6 +1,6 @@
 /*Completed - Use CSS variables to maintain clean and reusable values for a color scheme.*/
 
-/*!!!!TBC - Use flexbox and media queries to create a responsive grid layout.*/
+/*Completed- Use flexbox and media queries to create a responsive grid layout.*/
 
 /*Completed - Each CSS snippet should have a card-like layout with the CSS syntax wrapped in an [HTML pre element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).*/
 
@@ -11,26 +11,53 @@
 /*Completed - Must incorporate a bit of animation using the [CSS transition property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition).*/
 
 /*Grid work begins*/
-
 /*Flexbox Row*/
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 50px 0px;
 }
 
-/*Flexbox Column*/
-.column {
+/* At size 768px and below, the app on phones should be a 6 row x 1 column page */
+@media screen and (max-width: 768px) {
+    .card-column {
+        /* Having flex growth 1 has items take up remaining space in the flex container.*/
+        flex: 1 0 100%;
+        /* when the screen resizes, make it so our columns don't jump in size */
+        transition: flex-basis 500ms linear;
+    }
+}
+
+/* media query for tablets */
+@media screen and (min-width: 768px) {
+
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    /* Having flex growth 0 has items NOT take up remaining space in the flex container.*/
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+/* make each code card a flexbox column to align and justify content within it */
+.code-card {
     display: flex;
     flex-direction: column;
-}
-
-/*CSS Grid Layout*/
-.justify-center {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    justify-content: flex-start;
+    min-height: 100%;
+    outline: 2px dashed var(--gin);
+    color: --var(light);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
 }
 
 /*Color and style formatting begins*/
@@ -40,6 +67,11 @@
     --lighter: #588157;
     --darker: #3A5A40;
     --background: #344E41;
+}
+
+/*Main dark color of site*/
+body {
+    background-color: var(--background);
 }
 
 p,
@@ -64,15 +96,38 @@ h3,
     color: var(--header);
 }
 
+h1 {
+    margin-bottom: -20px;
+    font-size: 50px;
+}
+
 /*Text just under the h1*/
 header>p {
     padding: 0, 10px;
     color: var(--light);
+    font-size: 18px;
+    margin: 2.5% 20% 0% 20%;
+    justify-content: center;
 }
 
-/*Main dark color of site*/
-body {
-    background-color: var(--background);
+/* Adds space between the rows*/
+.card-column {
+    margin-bottom: 50px;
+}
+
+/*Dashed border around card*/
+figure {
+    border: dashed var(--light);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* Adds space between the gradient block and the <p> text explaining it above*/
+.card-body,
+.code-block {
+    margin: 0 10px 0px 10px;
 }
 
 /*Linear Gradients - Area encompassing code*/
@@ -80,14 +135,22 @@ body {
     color: var(--light);
     border-radius: 10px;
     background-image: linear-gradient(var(--darker), var(--lighter));
-    padding: 50px;
+    /*Gives a bit of cushion between the margins of the gradient and the pre-formatted texts of code.*/
+    padding: 20px;
+    margin-bottom: 10px;
+    /* When clicking on text, selects all text */
     user-select: all;
+    /* Not my work - each card's code block grows to the height of the largest code block on the page, making each card even in height */
+    flex-grow: 1;
+    white-space: pre-wrap;
 }
 
-/*Dashed border around card*/
-figure {
-    border: dashed var(--light);
+.code-block {
+    vertical-align: baseline;
+    /*font size for code*/
+    font-size: 18px;
 }
+
 
 /*Overlay Card with Title*/
 .card-header {
@@ -99,11 +162,19 @@ figure {
     border-radius: 10px;
 }
 
+footer {
+    margin-bottom: -20px;
+    font-size: 25px;
+}
+
+
+
 /*Box Transition Glow - There was a missing comma here*/
 .code-card,
 .card-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
+    padding: 8px;
 }
 
 /*Pseudo-class selector to make box transition glow*/
