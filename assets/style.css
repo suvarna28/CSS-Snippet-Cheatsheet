@@ -1,0 +1,114 @@
+
+/*Use CSS variables to maintain clean and reusable values for a color scheme.*/
+
+/*Use flexbox and media queries to create a responsive grid layout.*/
+
+/*Each CSS snippet should have a card-like layout with the CSS syntax wrapped in an [HTML pre element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).*/
+
+/*Each CSS snippet can easily be highlighted for copying on click using the [CSS user-select property](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select).*/
+
+/*Must incorporate a background color using a [CSS linear-gradient function](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient).*/
+
+/*Must incorporate a bit of animation using the [CSS transition property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition).*/
+
+/*Flexbox Row*/
+
+
+
+/*Flexbox Column*/
+
+
+/*CSS Grid Layout*/
+
+
+/*Linear Gradients*/
+
+
+/*Box Transition Glow*/
+
+
+
+/*Overlay Card with Title*/
+
+body {
+    background-color: #33393f;
+    text-align: center; 
+    color:azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e866ec;
+    font-size: 50px;
+}
+
+.header-p {
+    margin: 0 200px;
+    font-size: large;
+}
+
+main {
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main h2 {
+    color: #e866ec;
+    border: 2px solid azure;
+    margin: -15px;
+    width: 75%;
+    border-radius: 5px;
+    margin-left: 12.5%;
+    background-color: #33393f;
+}
+
+pre {
+    color:azure; 
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-image: linear-gradient(#e866ec4d, #e866ec99);
+    width: fit-content;
+    margin-left: 0;
+    text-align: left;
+    overflow: auto;
+}
+
+.inside-card > p {
+    font-size: large;
+    color: #e866ec;
+    margin: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: fit-content;
+}
+
+.inside-card {
+    padding: 0 20px;
+}
+
+.card-item {
+    text-align: center;
+    border-style: dashed;
+    text-align: center;
+    margin: 10px 10px;
+    height: 10%;
+    width: 30%;
+} 
+
+.card-item:hover {
+    box-shadow: 0 0 10px 2px #e866ec; 
+}
+
+h2:hover {
+    box-shadow: 0 0 10px 2px #e866ec; 
+}
+
+footer {
+    font-size: 50px;
+    color: #e866ec;
+}
+
