@@ -56,7 +56,6 @@
     min-height: 100%;
     outline: 2px dashed var(--gin);
     color: --var(light);
-    outline-offset: -2px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -106,7 +105,7 @@ header>p {
     padding: 0, 10px;
     color: var(--light);
     font-size: 18px;
-    margin: 2.5% 20% 0% 20%;
+    margin: 1.5% 20% 0% 20%;
     justify-content: center;
 }
 
@@ -151,7 +150,6 @@ h2 {
     font-size: 18px;
 }
 
-
 /*Overlay Card with Title*/
 .card-header {
     position: relative;
@@ -167,12 +165,9 @@ footer {
     font-size: 25px;
 }
 
-
-
 /*Box Transition Glow - There was a missing comma here*/
 .code-card,
 .card-header {
-    border-radius: 8px;
     transition: all 0.5s ease-in-out;
     padding: 8px;
 }
