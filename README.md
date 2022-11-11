@@ -19,7 +19,7 @@ This project was a collaborative effort to display a collection of Cascading Sty
 
 * The following display should appear on screens at screen sizes 768px and below:
 
-    ![On a mobile device, the application displays one CSS code snippet per row.](./assets/Phone_2.PNG)
+    ![On a mobile device, the application displays one CSS code snippet per row.](./assets/Phone_2.png)
 
 ## Credits
 
