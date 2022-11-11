@@ -6,10 +6,20 @@ This project was a collaborative effort to display a collection of Cascading Sty
 
 ## Usage
 
-* Please click on the following link of the deployed website, <!--[link to be added]-->
+* Please click on the following link of the deployed website, https://suvarna28.github.io/CSS-Snippet-Cheatsheet/
 
-<!--To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    ![alt text](assets/images/screenshot.png)-->
+* The following display should appear on screens at screen sizes 992px and above:
+
+    ![On a desktop, the application displays three CSS code snippets per row.](./assets/Desktop.png)
+
+* The following display should appear on screens at screen sizes 768px and above:
+
+    ![On a tablet, the application displays two CSS code snippets per row.](./assets/Tablet_2.png)
+
+
+* The following display should appear on screens at screen sizes 768px and below:
+
+    ![On a mobile device, the application displays one CSS code snippet per row.](./assets/Phone_2.PNG)
 
 ## Credits
 
@@ -17,7 +27,10 @@ This project was a collaborative effort to display a collection of Cascading Sty
 
 HTML code belongs to George Washington University's Full Stack Coding BootCamp.
 
-<!--If you followed tutorials, include links to those here as well.-->
-
 ## Features
-<!--If your project has a lot of features, list them here.-->
+
+* Responsive layout for easy viewing of CSS concepts on any device.
+
+* Each CSS snippet highlights entire code's text for copying on click.
+
+* Color palette can easily be swapped out with using CSS root.
